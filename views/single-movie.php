@@ -26,9 +26,9 @@ get_header(); ?>
 					$nb_stars = intval( get_post_meta( get_the_ID(), 'movie_rating', true ) );
 					for ( $star_counter = 1; $star_counter <= 5; $star_counter++ ) {
 						if ( $star_counter <= $nb_stars ) {
-							echo '<img src="' . plugins_url( 'movies-custom-post-type/images/icon.gif' ).'" height="30px" width="30px" />';
+							echo '<img src="' . plugins_url( 'WP-Movies-Plugin/images/icon.gif' ).'" height="30px" width="30px" />';
 						} else {
-							echo '<img src="' . plugins_url( 'movies-custom-post-type/images/grey.png' ).'"height="30px" width="30px" />';
+							echo '<img src="' . plugins_url( 'WP-Movies-Plugin/images/grey.png' ).'"height="30px" width="30px" />';
 						}
 					}
 					?>
